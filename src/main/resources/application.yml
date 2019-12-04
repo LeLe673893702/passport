@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/study
+  mvc:
+    view:
+      suffix: /static/jsp
+      prefix: .jsp
+
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  lazy-initialization: true
+  configuration:
+    map-underscore-to-camel-case: true
+
